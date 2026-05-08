@@ -1,0 +1,251 @@
+/* =====================================================
+   BGA TOKYO NIGHT THEME
+   Inspiré du thème Tokyo Night (VSCode / Neovim)
+===================================================== */
+
+:root{
+    --bg: #1a1b26;
+    --bg-dark: #16161e;
+    --bg-panel: #24283b;
+    --bg-hover: #2f354f;
+
+    --border: #3b4261;
+
+    --text: #c0caf5;
+    --text-soft: #9aa5ce;
+
+    --blue: #7aa2f7;
+    --cyan: #7dcfff;
+    --green: #9ece6a;
+    --orange: #ff9e64;
+    --red: #f7768e;
+    --purple: #bb9af7;
+}
+
+/* ===== BASE ===== */
+
+html,
+body,
+#ebd-body,
+#overall-content {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+/* ===== HEADER ===== */
+
+#topbar,
+#header,
+.bga-topbar {
+    background: var(--bg-dark) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+#topbar *,
+#header * {
+    color: var(--text) !important;
+}
+
+/* ===== PANELS ===== */
+
+.whiteblock,
+.roundedbox,
+.pagesection,
+.player-board,
+.game_panel,
+.chatwindowcontent,
+.chatwindowavatar,
+#right-side-first-part,
+#right-side-second-part {
+    background: var(--bg-panel) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+
+    border-radius: 14px !important;
+    box-shadow:
+        0 0 0 1px rgba(122,162,247,0.05),
+        0 8px 24px rgba(0,0,0,0.35) !important;
+}
+
+/* ===== HOVER ===== */
+
+.pagesection:hover,
+.whiteblock:hover,
+.roundedbox:hover {
+    background: var(--bg-hover) !important;
+    transition: 0.2s ease;
+}
+
+/* ===== LINKS ===== */
+
+a {
+    color: var(--blue) !important;
+}
+
+a:hover {
+    color: var(--cyan) !important;
+}
+
+/* ===== BUTTONS ===== */
+
+button,
+.bgabutton,
+.dijitButtonNode {
+    background: #2a3047 !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+
+    border-radius: 10px !important;
+    transition: 0.15s ease;
+}
+
+button:hover,
+.bgabutton:hover,
+.dijitButtonNode:hover {
+    background: #36406a !important;
+    border-color: var(--blue) !important;
+
+    box-shadow:
+        0 0 12px rgba(122,162,247,0.25);
+}
+
+/* ===== INPUTS ===== */
+
+input,
+textarea,
+select {
+    background: #1f2335 !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-soft) !important;
+}
+
+/* ===== CHAT ===== */
+
+.chatmessage {
+    color: var(--text) !important;
+}
+
+/* ===== MENUS ===== */
+
+.dropdown-menu,
+.dijitMenu,
+.dijitPopup,
+.dijitMenuPopup {
+    background: var(--bg-panel) !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+}
+
+/* ===== TABLES ===== */
+
+table,
+tr,
+td,
+th {
+    background: transparent !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+/* ===== LOGS ===== */
+
+.log,
+.logitem {
+    color: var(--text-soft) !important;
+}
+
+/* ===== PLAYER COLORS ===== */
+/* On garde les couleurs originales des joueurs */
+
+.player-name,
+.player-board_name {
+    color: inherit !important;
+}
+
+/* ===== TITLES ===== */
+
+h1, h2, h3, h4 {
+    color: #c7d7ff !important;
+}
+
+/* ===== STATUS ===== */
+
+.game_state,
+.status,
+.game-status {
+    color: var(--green) !important;
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #414868;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #565f89;
+}
+
+/* ===== TOOLTIP ===== */
+
+.dijitTooltipContainer {
+    background: #292e42 !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+}
+
+/* ===== DIALOGS ===== */
+
+.modal-content,
+.ui-dialog,
+.dijitDialog {
+    background: var(--bg-panel) !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+}
+
+/* ===== IMAGES ===== */
+
+img {
+    opacity: 0.96;
+}
+
+/* ===== SELECTION ===== */
+
+::selection {
+    background: rgba(122,162,247,0.35);
+}
+
+/* ===== PETITS DÉTAILS ===== */
+
+hr {
+    border-color: var(--border) !important;
+}
+
+/* ===== EFFET TOKYO NIGHT ===== */
+
+.whiteblock,
+.roundedbox,
+.pagesection {
+    backdrop-filter: blur(4px);
+}

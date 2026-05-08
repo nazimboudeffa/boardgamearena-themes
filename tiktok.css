@@ -1,0 +1,333 @@
+/* =====================================================
+   BGA TIKTOK DARK NEON THEME
+   Inspiré de TikTok Dark Mode
+===================================================== */
+
+:root{
+    --bg-main: #000000;
+    --bg-dark: #0f0f0f;
+    --bg-panel: #161616;
+    --bg-card: #1d1d1d;
+    --bg-hover: #252525;
+
+    --border: #2b2b2b;
+
+    --text: #ffffff;
+    --text-soft: #bdbdbd;
+    --text-muted: #8a8a8a;
+
+    --cyan: #25f4ee;
+    --pink: #fe2c55;
+    --pink-hover: #ff4d73;
+
+    --green: #57f287;
+}
+
+/* ===== BASE ===== */
+
+html,
+body,
+#ebd-body,
+#overall-content {
+
+    background: var(--bg-main) !important;
+    color: var(--text) !important;
+
+    font-family:
+        Inter,
+        system-ui,
+        sans-serif !important;
+}
+
+/* ===== HEADER ===== */
+
+#topbar,
+#header,
+.bga-topbar {
+
+    background: rgba(10,10,10,0.95) !important;
+
+    border-bottom: 1px solid var(--border) !important;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 2px 14px rgba(0,0,0,0.5);
+}
+
+#topbar *,
+#header * {
+    color: white !important;
+}
+
+/* ===== PANELS ===== */
+
+.whiteblock,
+.roundedbox,
+.pagesection,
+.player-board,
+.game_panel,
+.chatwindowcontent,
+.chatwindowavatar,
+#right-side-first-part,
+#right-side-second-part,
+#leftright_page_wrapper {
+
+    background: var(--bg-panel) !important;
+
+    color: var(--text) !important;
+
+    border: 1px solid #202020 !important;
+
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.02),
+        0 10px 30px rgba(0,0,0,0.45);
+}
+
+/* ===== HOVER ===== */
+
+.pagesection:hover,
+.whiteblock:hover,
+.roundedbox:hover {
+
+    background: var(--bg-hover) !important;
+
+    transform: translateY(-1px);
+
+    transition:
+        0.15s ease;
+}
+
+/* ===== LINKS ===== */
+
+a {
+    color: var(--cyan) !important;
+}
+
+a:hover {
+    color: #7ffbf7 !important;
+}
+
+/* ===== BUTTONS ===== */
+
+button,
+.bgabutton,
+.dijitButtonNode {
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--cyan),
+            var(--pink)
+        ) !important;
+
+    color: white !important;
+
+    border: none !important;
+
+    border-radius: 999px !important;
+
+    font-weight: 700 !important;
+
+    box-shadow:
+        0 0 16px rgba(37,244,238,0.25),
+        0 0 22px rgba(254,44,85,0.18);
+
+    transition: 0.15s ease;
+}
+
+button:hover,
+.bgabutton:hover,
+.dijitButtonNode:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 20px rgba(37,244,238,0.4),
+        0 0 28px rgba(254,44,85,0.3);
+}
+
+/* ===== INPUTS ===== */
+
+input,
+textarea,
+select {
+
+    background: var(--bg-card) !important;
+
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+
+    border-radius: 12px !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-muted) !important;
+}
+
+/* ===== CHAT ===== */
+
+.chatwindowcontent,
+.chatmessage {
+    color: var(--text) !important;
+}
+
+/* ===== MENUS ===== */
+
+.dropdown-menu,
+.dijitMenu,
+.dijitPopup,
+.dijitMenuPopup {
+
+    background: #111111 !important;
+
+    color: var(--text) !important;
+
+    border: 1px solid #222 !important;
+
+    border-radius: 14px !important;
+}
+
+/* ===== TABLES ===== */
+
+table,
+tr,
+td,
+th {
+
+    background: transparent !important;
+
+    color: var(--text) !important;
+
+    border-color: #222 !important;
+}
+
+/* ===== LOGS ===== */
+
+.log,
+.logitem {
+    color: var(--text-soft) !important;
+}
+
+/* ===== PLAYER COLORS ===== */
+
+.player-name,
+.player-board_name {
+    color: inherit !important;
+}
+
+/* ===== TITLES ===== */
+
+h1,
+h2,
+h3,
+h4 {
+
+    color: white !important;
+
+    letter-spacing: 0.3px;
+}
+
+/* ===== STATUS ===== */
+
+.game_state,
+.status,
+.game-status {
+
+    color: var(--green) !important;
+}
+
+/* ===== TOOLTIP ===== */
+
+.dijitTooltipContainer {
+
+    background: #121212 !important;
+
+    color: white !important;
+
+    border: 1px solid #2a2a2a !important;
+
+    border-radius: 12px !important;
+}
+
+/* ===== DIALOGS ===== */
+
+.modal-content,
+.ui-dialog,
+.dijitDialog {
+
+    background: #181818 !important;
+
+    color: white !important;
+
+    border: 1px solid #2a2a2a !important;
+
+    border-radius: 20px !important;
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #090909;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--cyan),
+            var(--pink)
+        );
+
+    border-radius: 999px;
+}
+
+/* ===== NOTIFICATIONS ===== */
+
+.notification,
+.standard_popin {
+
+    background: #151515 !important;
+
+    color: white !important;
+
+    border: 1px solid #262626 !important;
+
+    border-radius: 16px !important;
+}
+
+/* ===== SELECTION ===== */
+
+::selection {
+    background: rgba(254,44,85,0.35);
+}
+
+/* ===== IMAGES ===== */
+
+img {
+    opacity: 0.98;
+}
+
+/* ===== TIKTOK NEON GLOW ===== */
+
+.whiteblock,
+.roundedbox,
+.pagesection,
+.player-board {
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.02),
+        0 0 18px rgba(37,244,238,0.05),
+        0 0 26px rgba(254,44,85,0.04),
+        0 12px 30px rgba(0,0,0,0.5) !important;
+}

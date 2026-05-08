@@ -1,6 +1,6 @@
 # Board Game Arena Themes
 
-Some themes for the site
+Some Themes for the site Board Game Arena
 
 ## Installation :
 

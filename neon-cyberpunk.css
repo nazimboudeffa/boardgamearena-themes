@@ -1,0 +1,462 @@
+/* =====================================================
+   BGA CYBERPUNK NEON THEME
+   Ultra Neon / Synthwave / Cyberpunk 2077 vibe
+===================================================== */
+
+:root{
+
+    --bg-main: #070b12;
+    --bg-dark: #05070d;
+    --bg-panel: #101826;
+    --bg-card: #131d2d;
+    --bg-hover: #172338;
+
+    --border: #1d3150;
+
+    --text: #d8e9ff;
+    --text-soft: #8fa7c4;
+    --text-muted: #5d7391;
+
+    --cyan: #00f0ff;
+    --pink: #ff2bd6;
+    --purple: #9d4edd;
+    --yellow: #ffe600;
+    --green: #00ff9d;
+    --red: #ff3b5c;
+}
+
+/* ===== GLOBAL ===== */
+
+html,
+body,
+#ebd-body,
+#overall-content {
+
+    background:
+        radial-gradient(
+            circle at top,
+            #11192b 0%,
+            #070b12 55%
+        ) !important;
+
+    color: var(--text) !important;
+
+    font-family:
+        "Orbitron",
+        "Rajdhani",
+        system-ui,
+        sans-serif !important;
+}
+
+/* ===== HEADER ===== */
+
+#topbar,
+#header,
+.bga-topbar {
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,240,255,0.08),
+            rgba(255,43,214,0.08)
+        ),
+        rgba(5,7,13,0.96) !important;
+
+    border-bottom:
+        1px solid rgba(0,240,255,0.35) !important;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 0 14px rgba(0,240,255,0.15),
+        0 0 30px rgba(255,43,214,0.08);
+}
+
+#topbar *,
+#header * {
+
+    color: var(--text) !important;
+
+    text-shadow:
+        0 0 6px rgba(0,240,255,0.25);
+}
+
+/* ===== PANELS ===== */
+
+.whiteblock,
+.roundedbox,
+.pagesection,
+.player-board,
+.game_panel,
+.chatwindowcontent,
+.chatwindowavatar,
+#right-side-first-part,
+#right-side-second-part,
+#leftright_page_wrapper {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(16,24,38,0.95),
+            rgba(10,16,26,0.96)
+        ) !important;
+
+    color: var(--text) !important;
+
+    border:
+        1px solid rgba(0,240,255,0.22) !important;
+
+    border-radius: 18px !important;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.02),
+        0 0 20px rgba(0,240,255,0.08),
+        0 0 40px rgba(255,43,214,0.05),
+        inset 0 0 20px rgba(255,255,255,0.015);
+}
+
+/* ===== HOVER ===== */
+
+.pagesection:hover,
+.whiteblock:hover,
+.roundedbox:hover {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(20,32,50,0.98),
+            rgba(13,20,32,0.98)
+        ) !important;
+
+    border-color:
+        rgba(255,43,214,0.45) !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 18px rgba(0,240,255,0.16),
+        0 0 32px rgba(255,43,214,0.12);
+
+    transition: 0.15s ease;
+}
+
+/* ===== LINKS ===== */
+
+a {
+
+    color: var(--cyan) !important;
+
+    text-shadow:
+        0 0 10px rgba(0,240,255,0.35);
+}
+
+a:hover {
+
+    color: #7df9ff !important;
+}
+
+/* ===== BUTTONS ===== */
+
+button,
+.bgabutton,
+.dijitButtonNode {
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--pink),
+            var(--cyan)
+        ) !important;
+
+    color: #fff !important;
+
+    border: none !important;
+
+    border-radius: 999px !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+
+    box-shadow:
+        0 0 12px rgba(255,43,214,0.4),
+        0 0 24px rgba(0,240,255,0.28);
+
+    transition: 0.15s ease;
+}
+
+button:hover,
+.bgabutton:hover,
+.dijitButtonNode:hover {
+
+    transform:
+        scale(1.04);
+
+    box-shadow:
+        0 0 18px rgba(255,43,214,0.6),
+        0 0 34px rgba(0,240,255,0.4);
+}
+
+/* ===== INPUTS ===== */
+
+input,
+textarea,
+select {
+
+    background:
+        rgba(10,16,26,0.92) !important;
+
+    color: var(--text) !important;
+
+    border:
+        1px solid rgba(0,240,255,0.22) !important;
+
+    border-radius: 12px !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    border-color:
+        rgba(255,43,214,0.55) !important;
+
+    box-shadow:
+        0 0 12px rgba(255,43,214,0.22);
+}
+
+input::placeholder,
+textarea::placeholder {
+
+    color: var(--text-muted) !important;
+}
+
+/* ===== CHAT ===== */
+
+.chatwindowcontent,
+.chatmessage {
+
+    color: var(--text) !important;
+}
+
+/* ===== MENUS ===== */
+
+.dropdown-menu,
+.dijitMenu,
+.dijitPopup,
+.dijitMenuPopup {
+
+    background:
+        rgba(10,16,26,0.98) !important;
+
+    color: var(--text) !important;
+
+    border:
+        1px solid rgba(0,240,255,0.25) !important;
+
+    border-radius: 16px !important;
+
+    box-shadow:
+        0 0 24px rgba(0,240,255,0.1);
+}
+
+/* ===== TABLES ===== */
+
+table,
+tr,
+td,
+th {
+
+    background: transparent !important;
+
+    color: var(--text) !important;
+
+    border-color:
+        rgba(0,240,255,0.1) !important;
+}
+
+/* ===== LOGS ===== */
+
+.log,
+.logitem {
+
+    color: var(--text-soft) !important;
+}
+
+/* ===== PLAYER COLORS ===== */
+
+.player-name,
+.player-board_name {
+
+    color: inherit !important;
+}
+
+/* ===== TITLES ===== */
+
+h1,
+h2,
+h3,
+h4 {
+
+    color: #ffffff !important;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 0 12px rgba(0,240,255,0.35),
+        0 0 20px rgba(255,43,214,0.18);
+}
+
+/* ===== STATUS ===== */
+
+.game_state,
+.status,
+.game-status {
+
+    color: var(--green) !important;
+
+    text-shadow:
+        0 0 10px rgba(0,255,157,0.35);
+}
+
+/* ===== TOOLTIP ===== */
+
+.dijitTooltipContainer {
+
+    background:
+        rgba(8,12,20,0.98) !important;
+
+    color: var(--text) !important;
+
+    border:
+        1px solid rgba(255,43,214,0.35) !important;
+
+    border-radius: 14px !important;
+}
+
+/* ===== MODALS ===== */
+
+.modal-content,
+.ui-dialog,
+.dijitDialog {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(16,24,38,0.98),
+            rgba(8,12,20,0.98)
+        ) !important;
+
+    color: var(--text) !important;
+
+    border:
+        1px solid rgba(255,43,214,0.3) !important;
+
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 0 24px rgba(255,43,214,0.15),
+        0 0 40px rgba(0,240,255,0.08);
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: #05070d;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--pink),
+            var(--cyan)
+        );
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 0 10px rgba(255,43,214,0.35);
+}
+
+/* ===== NOTIFICATIONS ===== */
+
+.notification,
+.standard_popin {
+
+    background:
+        rgba(10,16,26,0.98) !important;
+
+    color: white !important;
+
+    border:
+        1px solid rgba(0,240,255,0.25) !important;
+
+    border-radius: 18px !important;
+}
+
+/* ===== SELECTION ===== */
+
+::selection {
+
+    background:
+        rgba(255,43,214,0.35);
+}
+
+/* ===== IMAGES ===== */
+
+img {
+
+    opacity: 0.96;
+
+    filter:
+        saturate(1.08)
+        contrast(1.02);
+}
+
+/* ===== CYBER GLOW ===== */
+
+.whiteblock,
+.roundedbox,
+.pagesection,
+.player-board {
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.whiteblock::before,
+.roundedbox::before,
+.pagesection::before,
+.player-board::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(0,240,255,0.03),
+            transparent
+        );
+
+    pointer-events: none;
+}

@@ -1,0 +1,268 @@
+/* =====================================================
+   BGA DISCORD DARK THEME
+   Inspiré de Discord Desktop
+===================================================== */
+
+:root{
+    --bg-main: #313338;
+    --bg-dark: #2b2d31;
+    --bg-darker: #1e1f22;
+    --bg-card: #232428;
+
+    --border: #3f4147;
+
+    --text: #f2f3f5;
+    --text-soft: #b5bac1;
+    --text-muted: #949ba4;
+
+    --accent: #5865f2;
+    --accent-hover: #6d78f5;
+
+    --green: #57f287;
+    --red: #ed4245;
+    --yellow: #fee75c;
+}
+
+/* ===== BASE ===== */
+
+html,
+body,
+#ebd-body,
+#overall-content {
+    background: var(--bg-main) !important;
+    color: var(--text) !important;
+}
+
+/* ===== HEADER ===== */
+
+#topbar,
+#header,
+.bga-topbar {
+    background: var(--bg-darker) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+#topbar *,
+#header * {
+    color: var(--text) !important;
+}
+
+/* ===== PANELS ===== */
+
+.whiteblock,
+.roundedbox,
+.pagesection,
+.player-board,
+.game_panel,
+.chatwindowcontent,
+.chatwindowavatar,
+#right-side-first-part,
+#right-side-second-part,
+#leftright_page_wrapper {
+    background: var(--bg-dark) !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+    border-radius: 12px !important;
+
+    box-shadow: none !important;
+}
+
+/* ===== HOVER ===== */
+
+.pagesection:hover,
+.whiteblock:hover,
+.roundedbox:hover {
+    background: #35373c !important;
+    transition: background 0.15s ease;
+}
+
+/* ===== LINKS ===== */
+
+a {
+    color: #00a8fc !important;
+}
+
+a:hover {
+    color: #33b9ff !important;
+}
+
+/* ===== BUTTONS ===== */
+
+button,
+.bgabutton,
+.dijitButtonNode {
+    background: var(--accent) !important;
+    color: white !important;
+
+    border: none !important;
+    border-radius: 8px !important;
+
+    transition: 0.15s ease;
+}
+
+button:hover,
+.bgabutton:hover,
+.dijitButtonNode:hover {
+    background: var(--accent-hover) !important;
+}
+
+/* ===== SECONDARY BUTTONS ===== */
+
+.bgabutton_gray,
+.bgabutton_gray:hover {
+    background: #4e5058 !important;
+}
+
+/* ===== INPUTS ===== */
+
+input,
+textarea,
+select {
+    background: var(--bg-card) !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-muted) !important;
+}
+
+/* ===== CHAT ===== */
+
+.chatwindowcontent,
+.chatmessage {
+    background: transparent !important;
+    color: var(--text) !important;
+}
+
+/* ===== MENUS ===== */
+
+.dropdown-menu,
+.dijitMenu,
+.dijitPopup,
+.dijitMenuPopup {
+    background: #111214 !important;
+    color: var(--text) !important;
+
+    border: 1px solid #222 !important;
+    border-radius: 10px !important;
+}
+
+/* ===== TABLES ===== */
+
+table,
+tr,
+td,
+th {
+    background: transparent !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+/* ===== LOGS ===== */
+
+.log,
+.logitem {
+    color: var(--text-soft) !important;
+}
+
+/* ===== PLAYER COLORS ===== */
+
+.player-name,
+.player-board_name {
+    color: inherit !important;
+}
+
+/* ===== TITLES ===== */
+
+h1,
+h2,
+h3,
+h4 {
+    color: white !important;
+}
+
+/* ===== STATUS ===== */
+
+.game_state,
+.status,
+.game-status {
+    color: var(--green) !important;
+}
+
+/* ===== TOOLTIP ===== */
+
+.dijitTooltipContainer {
+    background: #111214 !important;
+    color: var(--text) !important;
+
+    border: 1px solid #222 !important;
+}
+
+/* ===== MODALS ===== */
+
+.modal-content,
+.ui-dialog,
+.dijitDialog {
+    background: var(--bg-dark) !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+    border-radius: 14px !important;
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-darker);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4e5058;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6d6f78;
+}
+
+/* ===== NOTIFICATIONS ===== */
+
+.notification,
+.standard_popin {
+    background: var(--bg-dark) !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+}
+
+/* ===== SELECTION ===== */
+
+::selection {
+    background: rgba(88,101,242,0.35);
+}
+
+/* ===== IMAGE SOFTEN ===== */
+
+img {
+    opacity: 0.97;
+}
+
+/* ===== DISCORD STYLE DEPTH ===== */
+
+.whiteblock,
+.roundedbox,
+.pagesection,
+.player-board {
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.25) !important;
+}

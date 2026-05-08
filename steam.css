@@ -1,0 +1,324 @@
+/* =====================================================
+   BGA STEAM DARK THEME
+   Inspiré de Steam Desktop / Steam Deck
+===================================================== */
+
+:root{
+    --bg-main: #1b2838;
+    --bg-dark: #171a21;
+    --bg-panel: #2a475e;
+    --bg-card: #22384b;
+    --bg-hover: #31506b;
+
+    --border: #3d5a73;
+
+    --text: #c7d5e0;
+    --text-soft: #8f98a0;
+    --text-muted: #6b7a88;
+
+    --blue: #66c0f4;
+    --blue-hover: #8ed6ff;
+
+    --green: #a4d007;
+    --orange: #e35e1c;
+    --red: #d94126;
+}
+
+/* ===== BASE ===== */
+
+html,
+body,
+#ebd-body,
+#overall-content {
+    background: linear-gradient(
+        180deg,
+        #1b2838 0%,
+        #171a21 100%
+    ) !important;
+
+    color: var(--text) !important;
+}
+
+/* ===== HEADER ===== */
+
+#topbar,
+#header,
+.bga-topbar {
+    background: var(--bg-dark) !important;
+
+    border-bottom: 1px solid #000 !important;
+
+    box-shadow:
+        0 2px 10px rgba(0,0,0,0.45);
+}
+
+#topbar *,
+#header * {
+    color: var(--text) !important;
+}
+
+/* ===== PANELS ===== */
+
+.whiteblock,
+.roundedbox,
+.pagesection,
+.player-board,
+.game_panel,
+.chatwindowcontent,
+.chatwindowavatar,
+#right-side-first-part,
+#right-side-second-part,
+#leftright_page_wrapper {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(42,71,94,0.95),
+            rgba(34,56,75,0.95)
+        ) !important;
+
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+
+    border-radius: 10px !important;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.35);
+}
+
+/* ===== HOVER ===== */
+
+.pagesection:hover,
+.whiteblock:hover,
+.roundedbox:hover {
+    background:
+        linear-gradient(
+            180deg,
+            #31506b,
+            #29445a
+        ) !important;
+
+    transition: 0.15s ease;
+}
+
+/* ===== LINKS ===== */
+
+a {
+    color: var(--blue) !important;
+}
+
+a:hover {
+    color: var(--blue-hover) !important;
+}
+
+/* ===== BUTTONS ===== */
+
+button,
+.bgabutton,
+.dijitButtonNode {
+
+    background:
+        linear-gradient(
+            180deg,
+            #67c1f5,
+            #417a9b
+        ) !important;
+
+    color: white !important;
+
+    border: 1px solid #66c0f4 !important;
+
+    border-radius: 4px !important;
+
+    text-shadow:
+        0 1px 2px rgba(0,0,0,0.4);
+
+    transition: 0.15s ease;
+}
+
+button:hover,
+.bgabutton:hover,
+.dijitButtonNode:hover {
+
+    background:
+        linear-gradient(
+            180deg,
+            #8ed6ff,
+            #4b91b8
+        ) !important;
+
+    box-shadow:
+        0 0 12px rgba(102,192,244,0.35);
+}
+
+/* ===== INPUTS ===== */
+
+input,
+textarea,
+select {
+
+    background: #101822 !important;
+    color: var(--text) !important;
+
+    border: 1px solid #45607a !important;
+
+    border-radius: 4px !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-muted) !important;
+}
+
+/* ===== CHAT ===== */
+
+.chatwindowcontent,
+.chatmessage {
+    color: var(--text) !important;
+}
+
+/* ===== MENUS ===== */
+
+.dropdown-menu,
+.dijitMenu,
+.dijitPopup,
+.dijitMenuPopup {
+
+    background: #1f2f3d !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+
+    border-radius: 6px !important;
+}
+
+/* ===== TABLES ===== */
+
+table,
+tr,
+td,
+th {
+    background: transparent !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+/* ===== LOGS ===== */
+
+.log,
+.logitem {
+    color: var(--text-soft) !important;
+}
+
+/* ===== PLAYER COLORS ===== */
+
+.player-name,
+.player-board_name {
+    color: inherit !important;
+}
+
+/* ===== TITLES ===== */
+
+h1,
+h2,
+h3,
+h4 {
+    color: #ffffff !important;
+
+    text-shadow:
+        0 1px 2px rgba(0,0,0,0.4);
+}
+
+/* ===== STATUS ===== */
+
+.game_state,
+.status,
+.game-status {
+    color: var(--green) !important;
+}
+
+/* ===== TOOLTIP ===== */
+
+.dijitTooltipContainer {
+
+    background: #1c2b38 !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+}
+
+/* ===== DIALOGS ===== */
+
+.modal-content,
+.ui-dialog,
+.dijitDialog {
+
+    background:
+        linear-gradient(
+            180deg,
+            #22384b,
+            #1b2d3b
+        ) !important;
+
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+
+    border-radius: 10px !important;
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #101822;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b5a74;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4e7697;
+}
+
+/* ===== NOTIFICATIONS ===== */
+
+.notification,
+.standard_popin {
+
+    background: #1f2f3d !important;
+    color: var(--text) !important;
+
+    border: 1px solid var(--border) !important;
+}
+
+/* ===== SELECTION ===== */
+
+::selection {
+    background: rgba(102,192,244,0.35);
+}
+
+/* ===== IMAGES ===== */
+
+img {
+    opacity: 0.98;
+}
+
+/* ===== STEAM GLOW ===== */
+
+.whiteblock,
+.roundedbox,
+.pagesection,
+.player-board {
+
+    box-shadow:
+        0 4px 18px rgba(0,0,0,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.03) !important;
+}

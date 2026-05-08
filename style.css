@@ -1,0 +1,102 @@
+/* ===== BGA SMART DARK MODE ===== */
+
+html,
+body,
+#ebd-body,
+#overall-content {
+    background: #151515 !important;
+    color: #e6e6e6 !important;
+}
+
+/* Zones principales */
+.whiteblock,
+.roundedbox,
+.pagesection,
+.player-board,
+.game_panel,
+.chatwindowcontent {
+    background: #202020 !important;
+    border-color: #3a3a3a !important;
+    color: inherit !important;
+}
+
+/* Header */
+#topbar,
+#header {
+    background: #101010 !important;
+}
+
+/* Liens */
+a {
+    color: #6da8ff !important;
+}
+
+/* Boutons */
+button,
+.bgabutton,
+.dijitButtonNode {
+    background: #2b2b2b !important;
+    color: #f0f0f0 !important;
+    border: 1px solid #444 !important;
+}
+
+button:hover,
+.bgabutton:hover {
+    background: #363636 !important;
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+    background: #1c1c1c !important;
+    color: #ededed !important;
+    border: 1px solid #444 !important;
+}
+
+/* Menus popup */
+.dropdown-menu,
+.dijitMenu,
+.dijitPopup {
+    background: #252525 !important;
+    color: #f0f0f0 !important;
+}
+
+/* Chat */
+.chatmessage {
+    color: #eaeaea !important;
+}
+
+/* IMPORTANT :
+   Ne PAS forcer TOUS les textes en blanc.
+   Beaucoup d'éléments BGA utilisent déjà
+   des couleurs spécifiques utiles.
+*/
+
+/* Logs de jeu */
+.log,
+.logitem {
+    color: inherit !important;
+}
+
+/* Hover doux */
+.pagesection:hover,
+tr:hover {
+    background: #2a2a2a !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 8px;
+}
+
+/* Images trop lumineuses */
+img {
+    opacity: 0.95;
+}

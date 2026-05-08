@@ -1,4 +1,6 @@
-# boardgamearena-darkmode
+# Board Game Arena Themes
+
+Some themes for the site
 
 ## Installation :
 
